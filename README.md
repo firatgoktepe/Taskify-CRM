@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+### Tech used in this project
+
+- [Next.js 14](https://nextjs.org/)
+- [TypeScript 5](https://www.typescriptlang.org/)
+- [Tailwind CSS 3.4.1](https://tailwindcss.com/)
+- [ESLint 8](https://eslint.org/)
+- [Clerk](https://clerk.com/) (for authentication)
+- [Prisma](https://www.prisma.io/) (for database, an ORM tool)
+
 ## Getting Started
 
 First, run the development server:
