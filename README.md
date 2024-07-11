@@ -4,6 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 - [Next.js 14](https://nextjs.org/)
 - [TypeScript 5](https://www.typescriptlang.org/)
+- [Zustand](https://zustand-demo.pmnd.rs/) (for state management)
 - [Tailwind CSS 3.4.1](https://tailwindcss.com/)
 - [ESLint 8](https://eslint.org/)
 - [Clerk](https://clerk.com/) (for authentication)
