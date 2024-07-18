@@ -78,7 +78,7 @@ export const FormPicker = ({ id, errors }: FormPickerProps) => {
             key={image.id}
             className={cn(
               "group relative aspect-video cursor-pointer bg-muted transition hover:opacity-75",
-              pending && "cursor-auto opacity-50 hover:opacity-50",
+              pending && "cursor-auto opacity-50 hover:opacity-50"
             )}
             onClick={() => {
               if (pending) return;
@@ -106,13 +106,9 @@ export const FormPicker = ({ id, errors }: FormPickerProps) => {
                 <Check className="h-4 w-4 text-white" />
               </div>
             )}
-            <Link
-              href={image.links.html}
-              target="_blank"
-              className="absolute bottom-0 w-full truncate bg-black/50 p-1 text-[10px] text-white opacity-0 hover:underline group-hover:opacity-100"
-            >
+            <p className="absolute bottom-0 w-full truncate bg-black/50 p-1 text-[10px] text-white opacity-0 hover:underline group-hover:opacity-100">
               {image.user.name}
-            </Link>
+            </p>
           </div>
         ))}
       </div>
