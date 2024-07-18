@@ -1,14 +1,15 @@
 "use client";
 
 import { Menu } from "lucide-react";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-
-import { Button } from "@/components/ui/button";
+import { usePathname } from "next/navigation";
 
 import { useMobileSidebar } from "@/hooks/use-mobile-sidebar";
+import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
+
 import { Sidebar } from "./sidebar";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export const MobileSidebar = () => {
   const pathname = usePathname();
@@ -27,18 +28,18 @@ export const MobileSidebar = () => {
   }, [pathname, onClose]);
 
   if (!isMounted) {
-    return null;
+    return <Skeleton className="mr-2 h-10 w-10 md:hidden" />;
   }
 
   return (
     <>
       <Button
         onClick={onOpen}
+        className="mr-2 block md:hidden"
         variant="ghost"
         size="sm"
-        className="block md:hidden mr-2"
       >
-        <Menu className="w-4 h-4" />
+        <Menu className="h-4 w-4" />
       </Button>
       <Sheet open={isOpen} onOpenChange={onClose}>
         <SheetContent side="left" className="p-2 pt-10">
