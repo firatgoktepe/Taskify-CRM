@@ -21,12 +21,12 @@ const MarketingPage = () => {
       <div
         className={cn(
           "flex flex-col items-center justify-center",
-          headingFont.className,
+          headingFont.className
         )}
       >
         <div className="mb-4 flex items-center rounded-full border bg-amber-100 p-4 uppercase text-amber-700 shadow-sm">
           <Medal className="mr-2 h-6 w-6" />
-          <div className="pt-1">No 1 task managment</div>
+          <div className="pt-1">No 1 task management</div>
         </div>
         <h1 className="mb-6 text-center text-3xl text-neutral-800 md:text-6xl">
           Taskify helps team move
@@ -38,7 +38,7 @@ const MarketingPage = () => {
       <div
         className={cn(
           "mx-auto mt-4 max-w-xs text-center text-sm text-neutral-400 md:max-w-2xl md:text-xl",
-          textFont.className,
+          textFont.className
         )}
       >
         Collaborate, manage projects, and reach new productivity peaks. From
